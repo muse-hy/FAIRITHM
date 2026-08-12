@@ -1,0 +1,16 @@
+# secrets — never commit API keys
+.env
+run/.env
+
+# runtime artifacts
+run/history*.jsonl
+__pycache__/
+*.pyc
+.DS_Store
+
+# model weights are distributed separately (see models/README.md)
+models/*
+!models/README.md
+
+# experiment outputs
+experiments/out_*/
